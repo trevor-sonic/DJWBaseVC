@@ -11,17 +11,21 @@ open class BaseV: UIView {
     
     var onKill:( ()->Void )?
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
         setupUI()
+        setConstraints()
     }
-    
-    required public init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    public required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     /// Implement UI init without super
-    open func setupUI(){
-        
-    }
+    open func setupUI(){}
+    
+    /// Implement UI Constraints without super
+    open func setConstraints() {}
+    
+    
     open func kill(){
         removeFromSuperview()
     }

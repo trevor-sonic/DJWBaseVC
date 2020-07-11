@@ -8,30 +8,32 @@
 
 import UIKit
 
-public class BaseVC: UIViewController {
+open class BaseVC: UIViewController {
 
 
     var onKill:( ()->Void )?
+    //public weak var parentVC:UIViewController?
     
-    override public func loadView() {
+    override open func loadView() {
         super.loadView()
         //view = UIViewBuilder().build()
     }
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    func addVC(on parentVC:UIViewController){
+    open func addVC(on parentVC:UIViewController){
+        //self.parentVC = parentVC
         parentVC.addChild(self)
         self.didMove(toParent: parentVC)
     }
-    func addV(on parentV:UIView/*, autoFullSnap:Bool = true*/){
+    open func addV(on parentV:UIView/*, autoFullSnap:Bool = true*/){
         parentV.addSubview(self.view)
 //        if autoFullSnap{
 //            setConstraintsFull(on: parentV)
 //        }
     }
-    func addVCWithV(on parentVC:UIViewController/*, autoFullSnap:Bool = true*/){
+    open func addVCWithV(on parentVC:UIViewController/*, autoFullSnap:Bool = true*/){
         addVC(on: parentVC)
         addV(on: parentVC.view/*, autoFullSnap: autoFullSnap*/)
     }
@@ -40,7 +42,7 @@ public class BaseVC: UIViewController {
 //            make.edges.equalTo(aView)
 //        }
 //    }
-    func kill(){
+    open func kill(){
         if let v = view as? BaseV {
             v.kill()
         }else{

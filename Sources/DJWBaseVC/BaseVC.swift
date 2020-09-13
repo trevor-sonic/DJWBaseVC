@@ -10,9 +10,7 @@ import UIKit
 
 open class BaseVC: UIViewController {
 
-
     var onKill:( ()->Void )?
-    //public weak var parentVC:UIViewController?
     
     override open func loadView() {
         super.loadView()

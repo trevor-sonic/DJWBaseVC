@@ -1,13 +1,14 @@
 //
-//  BaseCVCell.swift
+//  BaseCVHeader.swift
 //  
 //
-//  Created by dejaWorks on 21/09/2020.
+//  Created by dejaWorks on 22/09/2020.
 //
 
 import UIKit
 
-open class BaseCVCell: UICollectionViewCell {
+open class BaseCVHeader: UICollectionReusableView {
+    
 
     // MARK: - init
     public override init(frame: CGRect) {

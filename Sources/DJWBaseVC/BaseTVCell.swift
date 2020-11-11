@@ -8,10 +8,8 @@
 import UIKit
 
 open class BaseTVCell: UITableViewCell {
-    
-    
+
     class var reuseID: String {return "BaseTVCell"}
-    
     
     // MARK: - init
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

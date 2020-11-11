@@ -9,6 +9,7 @@ import UIKit
 
 
 /// This is here temporary!
+/// This will be removed soon!
 // MARK: - VC
 public  protocol StageModuleVC {
     var moduleTitle:String  {get set}

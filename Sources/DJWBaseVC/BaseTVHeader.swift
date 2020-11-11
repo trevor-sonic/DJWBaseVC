@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  BaseTVHeader.swift
 //  
 //
 //  Created by dejaWorks on 05/07/2020.
@@ -7,9 +7,10 @@
 
 import UIKit
 
+/// Base Table View Header Footer View
 open class BaseTVHeader: UITableViewHeaderFooterView {
     
-    
+    /// ID definition per class
     class var reuseID: String {return "BaseTVHeader"}
     
     

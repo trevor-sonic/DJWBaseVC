@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Base UIView
 open class BaseV: UIView {
     
     var onKill:( ()->Void )?

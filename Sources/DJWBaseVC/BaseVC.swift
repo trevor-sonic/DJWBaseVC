@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Base UIViewController
 open class BaseVC: UIViewController {
 
     var onKill:( ()->Void )?

@@ -29,7 +29,7 @@ let package = Package(
             name: "DJWBaseVC",
             dependencies: [
                 ///public
-                //"SnapKit"
+                
         ]),
         .testTarget(
             name: "DJWBaseVCTests",
